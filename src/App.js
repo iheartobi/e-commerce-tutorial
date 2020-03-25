@@ -28,7 +28,7 @@ class App extends Component {
               id: snapshot.id,
               ...snapshot.data()
             }
-          }, () => console.log(this.state));
+          });
           
         });
       }else{
@@ -37,7 +37,6 @@ class App extends Component {
         })
       }
     });
-    console.log(this.state);
   }
 
   componentWillUnmount() {
